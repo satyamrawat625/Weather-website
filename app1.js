@@ -4,6 +4,7 @@ const https= require("https")
 const app= express()
 
 app.get("/",function(req,res) {
+    //this is static and will only  show weather for clement town
     const url="https://api.openweathermap.org/data/2.5/weather?q=clement%20town,uttarakhand&appid=92d41bf4ca65d59d538996ed2e007ccb&units=metric"//clement town
     // const url="https://api.openweathermap.org/data/2.5/weather?q=kashipur&appid=92d41bf4ca65d59d538996ed2e007ccb&units=metric"//kashipur
     
